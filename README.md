@@ -1,18 +1,18 @@
-# TwistedBrain Demo
+# TwistedBrain Demo Web
 
-A simple OpenFL Haxe demo application for macOS showcasing TwistedBrain graphics.
+A simple OpenFL Haxe demo application for web browsers showcasing TwistedBrain graphics.
 
 ## Features
 
 - Interactive logo display with click-to-cycle functionality
 - Uses TwistedBrain logo assets (tb.png, tb_2.png, tb_3.png, tb_4.png, tb_5.png)
 - Clean, simple UI with welcome text and instructions
-- Built specifically for macOS target
+- Built specifically for HTML5/web target
 
 ## Project Structure
 
 ```
-TwistedBrainDemo/
+TwistedBrainDemoWeb/
 ├── project.xml              # OpenFL project configuration
 ├── Source/
 │   └── TwistedBrainDemoMain.hx  # Main application class
@@ -23,9 +23,11 @@ TwistedBrainDemo/
 │   ├── tb_4.png
 │   └── tb_5.png
 └── Export/
-    └── macos/
+    └── html5/
         └── bin/
-            └── TwistedBrainDemo.app  # Built macOS application
+            ├── index.html       # Web application entry point
+            ├── TwistedBrainDemo.js  # Compiled JavaScript
+            └── assets/          # Embedded assets
 ```
 
 ## Requirements
@@ -33,23 +35,29 @@ TwistedBrainDemo/
 - Haxe 4.3.7+
 - OpenFL 9.4.1+
 - Lime 8.2.2+
-- macOS development environment
+- Modern web browser with HTML5 support
 
 ## Building
 
 1. Navigate to the project directory:
    ```bash
-   cd TwistedBrainDemo
+   cd TwistedBrainDemoWeb
    ```
 
-2. Build for macOS:
+2. Build for HTML5:
    ```bash
-   haxelib run openfl build mac
+   haxelib run openfl build html5
    ```
 
-3. Run the application:
+3. Serve the application locally:
    ```bash
-   open Export/macos/bin/TwistedBrainDemo.app
+   cd Export/html5/bin
+   python3 -m http.server 8000
+   ```
+
+4. Open in browser:
+   ```
+   http://localhost:8000
    ```
 
 ## Usage
