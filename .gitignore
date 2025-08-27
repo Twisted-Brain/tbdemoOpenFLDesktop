@@ -4,7 +4,7 @@ Export/
 *.exe
 *.dmg
 *.pkg
-
+/TB-graphics/
 # Haxe/OpenFL specific
 .build
 *.n
