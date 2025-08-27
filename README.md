@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="Assets/tb.png" alt="TwistedBrain Logo" width="200">
+</div>
+
 # TwistedBrain Demo Web
 
 A simple OpenFL Haxe demo application for web browsers showcasing TwistedBrain graphics.
@@ -77,3 +81,9 @@ TwistedBrainDemoWeb/
 ## Assets
 
 All logo assets are sourced from the TB-graphics collection and are automatically embedded in the application during build.
+
+---
+
+<div align="center">
+  <em>Made in a AI:Human DevOps cooperation process</em>
+</div>
